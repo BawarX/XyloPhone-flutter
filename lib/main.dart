@@ -1,7 +1,6 @@
 import 'package:audioplayers/audioplayers.dart';
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:audioplayers/audio_cache.dart';
+
 void main(List<String> args) {
   runApp(const MyApp());
 }
@@ -30,13 +29,15 @@ class _MusicPlayerState extends State<MusicPlayer> {
     return Scaffold(
         body: SafeArea(
       child: Center(
-        child: CupertinoButton(
-          color: Colors.black,
+        child: ElevatedButton(
           onPressed: () {
-            final player = AudioCache();
-           
+            print("hello");
+            final audio2 = AudioPlayer();
+            audio2.play(
+              AssetSource('assets/mamle.mp3'),
+            );
           },
-          child: const Text('Enabled'),
+          child: const Text('sivar gay'),
         ),
       ),
     ));
