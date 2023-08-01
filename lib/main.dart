@@ -34,7 +34,7 @@ class _MusicPlayerState extends State<MusicPlayer> {
             print("hello");
             final audio2 = AudioPlayer();
             audio2.play(
-              AssetSource('assets/mamle.mp3'),
+              AssetSource('assets/note3.wav'),
             );
           },
           child: const Text('sivar gay'),
